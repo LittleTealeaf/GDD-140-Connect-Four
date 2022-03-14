@@ -25,7 +25,8 @@ let board;
 
 
 function setup() {
-    createCanvas(800, 800);
+    const dim = Math.min(windowWidth,windowHeight) - 20;
+    createCanvas(dim,dim);
     newBoard();
 }
 
